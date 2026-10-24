@@ -58,6 +58,22 @@ fn median(data: &[i32]) -> f64 {
     
 }
 
+fn collatz_steps(n: u64) -> u32 {
+    let mut steps: u32 = 0;
+    let mut amount: u64= n;
+    while amount > 1 {
+        if amount %2 == 0 {
+            amount = amount / 2;
+            
+        } else {
+            amount = amount * 3 + 1;
+        }
+        steps += 1;
+    }
+
+    return steps;
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -99,12 +115,21 @@ mod tests {
         assert_eq!(result,3.5 as f64);
     }
 
-        #[test]
+    #[test]
     fn median_odd(){
         let result = median(&[2,7,4]);
         assert_eq!(result,4 as f64);
     }
 
+    #[test]
+    fn collatz_steps__when1_returns0() {
+        assert_eq!(collatz_steps(1),0);
+    }
+
+    #[test]
+    fn collatz_steps__when6_returns8() {
+        assert_eq!(collatz_steps(6),8);
+    }
 
 
 }
