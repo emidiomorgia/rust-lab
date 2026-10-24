@@ -1,12 +1,20 @@
 fn main() {
     println!("Hello, world!");
+    let input = [1,2,3];
+    let (min,max) = min_max(&input);
+    println!("Test su max e min: {},{}",min,max);
 }
 
 fn min_max(input: &[i32]) -> (i32,i32){
-    let min: i32 = 0;
-    let max: i32 = 0;
+    let mut min: i32 = i32::MAX;
+    let mut max: i32 = i32::MIN;
     for v in input {
-
+        if *v < min {
+            min = *v;
+        }
+        if *v > max {
+            max = *v;
+        }
     }
 
     return (min,max);
