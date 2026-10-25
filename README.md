@@ -84,13 +84,13 @@ cargo --version
 
 **Complessità:** `Bassa` · `Media` · `Alta`
 
-**Avanzamento complessivo:** `░░░░░░░░░░░░░░░░░░░░` 0 / 25 completate · 1 in esecuzione
+**Avanzamento complessivo:** `█░░░░░░░░░░░░░░░░░░░` 1 / 25 completate · 0 in esecuzione
 
 ### Parte I · Sintassi
 
 | # | Lezione | Argomenti | Complessità | Stato | Sorgenti |
 |---|---|---|---|---|---|
-| 01 | Statistiche su sequenze numeriche | Cargo, tipi primitivi e cast, array/`Vec`/slice, `if`/`loop` come espressioni, test | Bassa | 🟡 In esecuzione | [l01-stats](l01-stats/) |
+| 01 | Statistiche su sequenze numeriche | Cargo, tipi primitivi e cast, array/`Vec`/slice, `if`/`loop` come espressioni, test | Bassa | 🟢 Completata | [l01-stats](l01-stats/) |
 | 02 | Ownership e borrowing | Move vs `Copy`, `&T`, `&mut T`, reborrow | Media | ⚪ Da iniziare | — |
 | 03 | Lifetime e stringhe | Annotazioni di lifetime, `String` vs `&str` | Media | ⚪ Da iniziare | — |
 | 04 | Struct, enum e `match` | Tipi somma, `match` esaustivo, guardie, binding | Media | ⚪ Da iniziare | — |
